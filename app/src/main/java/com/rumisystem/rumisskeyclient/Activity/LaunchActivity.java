@@ -26,7 +26,10 @@ public class LaunchActivity extends AppCompatActivity {
 		Main.main();
 
 		//トークンがNull = ログインしてない
-		if(Main.TOKEN == null){
+		if(Main.TOKEN != null){
+			Intent INTENT = new Intent(LaunchActivity.this, MainActivity.class);
+			startActivity(INTENT);
+		} else {//ログインする
 			Intent INTENT = new Intent(LaunchActivity.this, LoginActivity.class);
 			startActivity(INTENT);
 		}
