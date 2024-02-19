@@ -33,12 +33,12 @@
 			android:layout_marginEnd="0dp"
 			android:layout_marginBottom="0dp">
 			<EditText
-				android:id="@+id/editTextText2"
+				android:id="@+id/UID_INPUT"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:ems="10"
 				android:inputType="textEmailAddress"
-				android:hint="\@ユーザー名@サーバー名"/>
+				android:hint="ユーザー名"/>
 		</FrameLayout>
 		<FrameLayout
 			android:layout_width="match_parent"
@@ -48,11 +48,11 @@
 			android:layout_marginEnd="0dp"
 			android:layout_marginBottom="0dp">
 			<EditText
-				android:id="@+id/editTextTextPassword2"
+				android:id="@+id/PASS_INPUT"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:ems="10"
-				android:inputType="textPassword"
+				android:inputType="text"
 				android:hint="パスワード"/>
 		</FrameLayout>
 		<FrameLayout
@@ -63,7 +63,7 @@
 			android:layout_marginEnd="0dp"
 			android:layout_marginBottom="0dp">
 			<Button
-				android:id="@+id/button"
+				android:id="@+id/LOGIN_BUTTON"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_gravity="right"

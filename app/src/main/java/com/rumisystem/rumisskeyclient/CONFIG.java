@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 
 public class CONFIG{
-	private static String  APP_DIR = Main.appContext.getExternalFilesDir(null).getPath();
+	public static String  APP_DIR = Main.appContext.getExternalFilesDir(null).getPath();
 
 	public static void main() {
 		LOAD_TOKEN();
@@ -13,7 +13,7 @@ public class CONFIG{
 
 	private static void LOAD_TOKEN(){
 		try{
-			File TOKEN_FILE = new File(APP_DIR, "TOKEN");
+			File TOKEN_FILE = new File(APP_DIR, "TOKEN.json");
 
 			if(TOKEN_FILE.exists()){
 				FileReader FR = new FileReader(TOKEN_FILE);
